@@ -1,0 +1,99 @@
+
+html,body {
+    overflow:visible;
+
+}
+#current{
+    color:rgb(27, 184, 184); 
+    font-weight:bold;
+}
+
+section{
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    float:left;
+    margin-bottom:20%;
+}
+
+/* This is for the div */
+.img-mod{
+    position:relative;
+    height:250px;
+    width:250px;
+    margin:20px;
+    float:left;
+}
+
+img{
+    width:100%;
+    height:100%;
+}
+
+img:hover{
+    opacity:0.3;
+}
+
+.capt-mod{
+    position: absolute;
+    bottom: 12%;
+    left:2.5%;
+    width: 100%;
+    height:35px;
+    line-height:35px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+    color:#ffffff;
+    background:#4aaaa5;
+
+}
+
+.capt-mod:hover{
+
+    position: absolute;
+    bottom: 10%;
+    left:1.5%;
+    width: 105%;
+    height:40px;
+    line-height:40px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+}
+/* I didn't realize there were certain media query dimensions given...I just did what looked right */
+/* This one feels excessive */
+@media screen and (max-width: 1240px) {
+    .container{
+        width:75%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .container{
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+@media screen and (max-width: 1090px) {
+    .container{
+        width:70%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .container{
+        width:50%;
+        margin-left:15%;
+        margin-right:auto;
+    }
+    section{
+        margin-bottom:35%;
+    }
+
+}
